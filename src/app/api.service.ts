@@ -7,8 +7,11 @@ import { HttpClient } from '@angular/common/http';
 export class ApiService {
 
   constructor(private httpClient: HttpClient) { }
+  getQuestions() {
+    return this.httpClient.get('https://localhost:44308/api/questions/');
+  }
   postQuestion(question) {
-    this.httpClient.post('', question).subscribe(res => {
+    this.httpClient.post('https://localhost:44308/api/questions/', question).subscribe(res => {
       console.log(res);
     });
   }
