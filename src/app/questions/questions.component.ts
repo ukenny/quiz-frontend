@@ -9,6 +9,7 @@ import { ApiService } from '../api.service';
 export class QuestionsComponent implements OnInit {
 
   questionsList;
+  question;
 
   constructor(private api: ApiService) { }
 
