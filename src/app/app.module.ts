@@ -13,11 +13,13 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { QuestionComponent } from './question/question.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     QuestionComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
