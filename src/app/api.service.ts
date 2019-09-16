@@ -28,6 +28,12 @@ export class ApiService {
     });
   }
 
+  postQuiz(quiz) {
+    this.httpClient.post(`https://localhost:44308/api/quizzes/`, quiz).subscribe(res => {
+      console.log(res);
+    });
+  }
+
   selectQuestion(question) {
     this.selectedQuestion.next(question);
   }
