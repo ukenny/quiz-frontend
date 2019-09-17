@@ -13,6 +13,7 @@ export class QuizComponent implements OnInit {
   constructor(private api: ApiService) { }
 
   ngOnInit() {
+    this.api.quizSelected.subscribe(quiz => this.quiz = quiz);
   }
 
 }
